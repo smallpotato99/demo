@@ -9,7 +9,7 @@ package com.example.android.navigationdrawerexample;
 
 public final class R {
     public static final class array {
-        public static final int planets_array=0x7f050000;
+        public static final int menu_array=0x7f050000;
     }
     public static final class attr {
     }
