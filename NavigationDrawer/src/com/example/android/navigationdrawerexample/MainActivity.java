@@ -133,6 +133,7 @@ public class MainActivity extends Activity {
             }
             return true;
         default:
+        	Toast.makeText(this, "BINGO!!!", Toast.LENGTH_SHORT).show();
             return super.onOptionsItemSelected(item);
         }
     }
