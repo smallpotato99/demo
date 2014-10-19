@@ -40,11 +40,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         mTitle = mDrawerTitle = getTitle();
-        // Get menu items from string.xml
         mPlanetTitles = getResources().getStringArray(R.array.menu_array);
-        // Create menu layout
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        // Create each item in menu
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
         // set a custom shadow that overlays the main content when the drawer opens
