@@ -11,20 +11,15 @@ public class SettingsActivity extends Activity {
 		setContentView(R.layout.activity_settings);
 		
         // enable ActionBar app icon to behave as action to toggle nav drawer
-		getActionBar().setTitle("Settings");
+//		getActionBar().setTitle("Settings");
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
     }
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case android.R.id.home:
-			this.finish();
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		}			
+		this.finish();
+		return true;
 	}
 	
 }

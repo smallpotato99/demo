@@ -127,7 +127,8 @@ public class MainActivity extends Activity {
         	//Return menu drawer click
 //        	Toast.makeText(MainActivity.this, ((TextView)view).getText(), Toast.LENGTH_LONG).show();
         	switch (position) {
-        	case 0:        		
+        	case 0:
+                mDrawerList.setItemChecked(position, true);
         		Toast.makeText(MainActivity.this, "00000", Toast.LENGTH_SHORT).show();
         		break;
         	case 1:
@@ -149,9 +150,12 @@ public class MainActivity extends Activity {
         		Toast.makeText(MainActivity.this, "66666", Toast.LENGTH_SHORT).show();
         		break;
         	case 7:
+                mDrawerList.setItemChecked(position, true);
         		Toast.makeText(MainActivity.this, "77777", Toast.LENGTH_SHORT).show();
         		break;
         	case 8:
+        		mDrawerList.setItemChecked(position, true);
+                setTitle(mPlanetTitles[position]);
         		Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
         		startActivity(intent);
         		break;
@@ -159,6 +163,7 @@ public class MainActivity extends Activity {
     			break;
         	}
 //            selectItem(position);
+        	mDrawerLayout.closeDrawer(mDrawerList);
         }
     }
 
