@@ -127,7 +127,8 @@ public class SettingsActivity extends Activity {
 //        	Toast.makeText(MainActivity.this, ((TextView)view).getText(), Toast.LENGTH_LONG).show();
         	switch (position) {
         	case 0:        		
-        		Toast.makeText(SettingsActivity.this, "00000", Toast.LENGTH_SHORT).show();
+        		Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+        		startActivity(intent);
         		break;
         	case 1:
         		Toast.makeText(SettingsActivity.this, "11111", Toast.LENGTH_SHORT).show();
@@ -151,7 +152,6 @@ public class SettingsActivity extends Activity {
         		Toast.makeText(SettingsActivity.this, "77777", Toast.LENGTH_SHORT).show();
         		break;
         	case 8:
-        		Toast.makeText(SettingsActivity.this, "77777", Toast.LENGTH_SHORT).show();
         		break;
         	default:
         		break;

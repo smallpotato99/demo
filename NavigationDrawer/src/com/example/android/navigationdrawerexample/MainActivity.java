@@ -151,11 +151,12 @@ public class MainActivity extends Activity {
         	case 7:
         		Toast.makeText(MainActivity.this, "77777", Toast.LENGTH_SHORT).show();
         		break;
-        	default:
-        		Toast.makeText(MainActivity.this, "88888", Toast.LENGTH_SHORT).show();
+        	case 8:
         		Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
         		startActivity(intent);
         		break;
+    		default:
+    			break;
         	}
 //            selectItem(position);
         }
