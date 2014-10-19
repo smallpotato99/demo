@@ -127,33 +127,12 @@ public class MainActivity extends Activity {
         	//Return menu drawer click
 //        	Toast.makeText(MainActivity.this, ((TextView)view).getText(), Toast.LENGTH_LONG).show();
         	switch (position) {
-        	case 0:
-                mDrawerList.setItemChecked(position, true);
-        		Toast.makeText(MainActivity.this, "00000", Toast.LENGTH_SHORT).show();
-        		break;
         	case 1:
+                mDrawerList.setItemChecked(position, true);
+                setTitle(mPlanetTitles[position]);
         		Toast.makeText(MainActivity.this, "11111", Toast.LENGTH_SHORT).show();
         		break;
-        	case 2:
-        		Toast.makeText(MainActivity.this, "22222", Toast.LENGTH_SHORT).show();
-        		break;
-        	case 3:
-        		Toast.makeText(MainActivity.this, "33333", Toast.LENGTH_SHORT).show();
-        		break;
-        	case 4:
-        		Toast.makeText(MainActivity.this, "44444", Toast.LENGTH_SHORT).show();
-        		break;
-        	case 5:
-        		Toast.makeText(MainActivity.this, "55555", Toast.LENGTH_SHORT).show();
-        		break;
-        	case 6:
-        		Toast.makeText(MainActivity.this, "66666", Toast.LENGTH_SHORT).show();
-        		break;
-        	case 7:
-                mDrawerList.setItemChecked(position, true);
-        		Toast.makeText(MainActivity.this, "77777", Toast.LENGTH_SHORT).show();
-        		break;
-        	case 8:
+        	case 0:
         		mDrawerList.setItemChecked(position, true);
                 setTitle(mPlanetTitles[position]);
         		Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
