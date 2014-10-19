@@ -2,7 +2,6 @@ package com.example.android.navigationdrawerexample;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
 
 public class SettingsActivity extends Activity {
@@ -21,10 +20,11 @@ public class SettingsActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
-			NavUtils.navigateUpFromSameTask(this);
+			this.finish();
 			return true;
-		}
+		default:
 			return super.onOptionsItemSelected(item);
+		}			
 	}
 	
 }
