@@ -2,5 +2,10 @@
     <item android:id="@+id/action_websearch"
           android:icon="@drawable/action_search"
           android:title="@string/action_websearch"
-          android:showAsAction="ifRoom|withText" />
+          android:showAsAction="always" />
+    
+        <item android:id="@+id/actionView"
+          android:icon="@drawable/action_search"
+          android:title="@string/action_websearch"
+          android:showAsAction="always" />
 </menu>

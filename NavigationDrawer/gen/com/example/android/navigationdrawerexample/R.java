@@ -1467,7 +1467,8 @@ containing a value of this type.
         public static final int venus=0x7f020082;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f050053;
+        public static final int LinearLayout1=0x7f050054;
+        public static final int actionView=0x7f050059;
         public static final int action_bar=0x7f05002e;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05002d;
@@ -1479,7 +1480,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050036;
-        public static final int action_websearch=0x7f050055;
+        public static final int action_websearch=0x7f050058;
         public static final int activity_chooser_view_content=0x7f050037;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1496,6 +1497,7 @@ containing a value of this type.
         public static final int disableHome=0x7f050008;
         public static final int drawer_layout=0x7f05004e;
         public static final int dropdown=0x7f05000f;
+        public static final int editText1=0x7f050051;
         public static final int edit_query=0x7f050042;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050038;
@@ -1509,12 +1511,13 @@ containing a value of this type.
         public static final int icon=0x7f05003c;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050039;
+        public static final int imageView1=0x7f050055;
         public static final int left_drawer=0x7f050050;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f05003b;
-        public static final int map=0x7f050051;
+        public static final int map=0x7f050052;
         public static final int match_parent=0x7f050024;
-        public static final int menuPosition=0x7f050054;
+        public static final int menuPosition=0x7f050057;
         public static final int middle=0x7f050012;
         public static final int monochrome=0x7f05002b;
         public static final int never=0x7f050009;
@@ -1546,9 +1549,10 @@ containing a value of this type.
         public static final int submit_area=0x7f05004b;
         public static final int tabMode=0x7f050002;
         public static final int terrain=0x7f05001b;
-        public static final int textView1=0x7f050052;
+        public static final int textView1=0x7f050053;
         public static final int title=0x7f05003d;
         public static final int top_action_bar=0x7f050032;
+        public static final int txtTourDetails=0x7f050056;
         public static final int up=0x7f050033;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
@@ -1607,9 +1611,10 @@ containing a value of this type.
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_main=0x7f030018;
         public static final int activity_settings=0x7f030019;
-        public static final int drawer_list_item=0x7f03001a;
-        public static final int fragment_planet=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int activity_tour=0x7f03001a;
+        public static final int drawer_list_item=0x7f03001b;
+        public static final int fragment_planet=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -1766,6 +1771,7 @@ containing a value of this type.
         public static final int store_picture_message=0x7f0a000e;
         public static final int store_picture_title=0x7f0a000d;
         public static final int titleSettings=0x7f0a0035;
+        public static final int tour_placeholder=0x7f0a0036;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
