@@ -121,7 +121,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, LocationListener {
 		        // set up the drawer's list view with items and click listener
 		        mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mPlanetTitles));
 		        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
-		
+
 		        // enable ActionBar app icon to behave as action to toggle nav drawer
 		        getActionBar().setDisplayHomeAsUpEnabled(true);
 		        getActionBar().setHomeButtonEnabled(true);
