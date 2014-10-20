@@ -44,9 +44,15 @@
 	        android:name="com.google.android.gms.version"
 	        android:value="@integer/google_play_services_version" />
         
+        <!--  Key for Home PC
         <meta-data 
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyAFtsH5Y-YiIlEZ32kYki3-UjVOR3SZjYc"/>
+        -->
+        <!-- Key for Laptop -->
+        <meta-data 
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDT6rvHhAphe5nY1hBPtZQQyRnBhUevB00"/>
         
 	</application>
 </manifest>
