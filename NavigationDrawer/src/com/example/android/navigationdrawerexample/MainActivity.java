@@ -212,7 +212,6 @@ GooglePlayServicesClient.OnConnectionFailedListener, LocationListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         	//Return menu drawer click
-//        	Toast.makeText(MainActivity.this, ((TextView)view).getText(), Toast.LENGTH_LONG).show();
         	switch (position) {
         	case 1:
                 mDrawerList.setItemChecked(position, true);
