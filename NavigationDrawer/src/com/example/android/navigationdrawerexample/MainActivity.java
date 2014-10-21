@@ -284,8 +284,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, LocationListener {
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
+        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_planet, container, false);
             int i = getArguments().getInt(ARG_PLANET_NUMBER);
             String planet = getResources().getStringArray(R.array.menu_array)[i];
@@ -390,32 +389,32 @@ GooglePlayServicesClient.OnConnectionFailedListener, LocationListener {
     	mMap.moveCamera(update);    	
     }
     
-	public void geoLocate(View v) throws IOException {
-    	EditText et = (EditText) findViewById(R.id.editText1);
-    	String location = et.getText().toString();
-    	if ( location.length() == 0 ) {    	
-    		Toast.makeText(this, "Please enter a location", Toast.LENGTH_SHORT).show();
-    		return;
-    	}
-    	
-    	hideSoftKeyboard(v);
-    	
-    	Geocoder gc = new Geocoder(this);
-    	List<Address> list = gc.getFromLocationName(location, 1);
-    	Address add = list.get(0);
-    	String locality = add.getLocality();
-//    	String country = add.getCountryName();
-    	
-    	Toast.makeText(this, locality, Toast.LENGTH_LONG).show();  
-    	
-    	double lat = add.getLatitude();
-    	double lng = add.getLongitude();    	
-    	
-    	gotoLocation(lat, lng, DEFAULTZOOM);
-    	
-//    	setMarker(locality, country, lat, lng);
-    	setMarker(locality, lat, lng);
-    }
+//	public void geoLocate(View v) throws IOException {
+//    	EditText et = (EditText) findViewById(R.id.editText1);
+//    	String location = et.getText().toString();
+//    	if ( location.length() == 0 ) {    	
+//    		Toast.makeText(this, "Please enter a location", Toast.LENGTH_SHORT).show();
+//    		return;
+//    	}
+//    	
+//    	hideSoftKeyboard(v);
+//    	
+//    	Geocoder gc = new Geocoder(this);
+//    	List<Address> list = gc.getFromLocationName(location, 1);
+//    	Address add = list.get(0);
+//    	String locality = add.getLocality();
+////    	String country = add.getCountryName();
+//    	
+//    	Toast.makeText(this, locality, Toast.LENGTH_LONG).show();  
+//    	
+//    	double lat = add.getLatitude();
+//    	double lng = add.getLongitude();    	
+//    	
+//    	gotoLocation(lat, lng, DEFAULTZOOM);
+//    	
+////    	setMarker(locality, country, lat, lng);
+//    	setMarker(locality, lat, lng);
+//    }
     
     private void hideSoftKeyboard(View v) {
     	InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
